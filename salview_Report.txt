@@ -1,0 +1,30 @@
+Application Name : Salview
+Version : Salview 2.2 (x86 )  
+Vulnerability name : Invalid Memory Read 
+Vulnerability Type : Denial Of Service(DOS)
+Vulnerability Level :  Medium
+
+Description of the vulnerability:
+The Loop gets negative value as loop Counter and it stuck; 
+That loop counter reading the [esi] register bytes and it gives an Access violation;
+Reading invalid memory form memcopy loop;
+
+Application crash detiles :
+Thread function offset: Salview+0x2ec4f5
+Line offset: Salview+0x2ec54e
+function code :  rep movs byte ptr es:[edi],byte ptr [esi]
+
+REP — Repeat while the ECX register not zero. (Intel SDM Vol1);
+ecx = ff464646  DWORD (-12171706) 
+
+NOTE : you can use InvalidMemoryRead.gif for more detailed evidence;
+
+The DOS.gif is Denial Of Service cause critical-lock in the application;
+	
+Help materials : 
+010 editer(Application)
+Windbg (Application)
+Windows Memory Dump Analysis 5.0 (Book)
+
+Thank you 
+Digital signature : @0xmrblack
