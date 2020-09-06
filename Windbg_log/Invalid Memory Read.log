@@ -1,0 +1,233 @@
+Opened log file 'D:\log\IMR.log'
+0:000> bp Salview+0x2ec554
+*** WARNING: Unable to verify checksum for Salview.exe
+0:000> g
+ModLoad: 76ec0000 76ee5000   C:\WINDOWS\SysWOW64\IMM32.DLL
+Breakpoint 0 hit
+eax=01161f30 ebx=00000000 ecx=00000000 edx=00000101 esi=01898d71 edi=01162031
+eip=00e2c554 esp=014ffcf4 ebp=014ffd14 iopl=0         nv up ei pl nz na pe cy
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000207
+Salview+0x2ec554:
+00e2c554 5e              pop     esi
+0:000> g
+Breakpoint 0 hit
+eax=01162038 ebx=00000000 ecx=00000000 edx=00000100 esi=01898e71 edi=01162138
+eip=00e2c554 esp=014ffce4 ebp=014ffd04 iopl=0         nv up ei pl nz na po cy
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000203
+Salview+0x2ec554:
+00e2c554 5e              pop     esi
+0:000> g
+Breakpoint 0 hit
+eax=01899f20 ebx=00001076 ecx=00000000 edx=00001076 esi=01899f06 edi=0189af96
+eip=00e2c554 esp=014ffd88 ebp=014ffdc8 iopl=0         nv up ei pl nz na pe cy
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000207
+Salview+0x2ec554:
+00e2c554 5e              pop     esi
+0:000> g
+ModLoad: 6f560000 6f5da000   C:\WINDOWS\SysWOW64\uxtheme.dll
+ModLoad: 76aa0000 76ba3000   C:\WINDOWS\SysWOW64\MSCTF.dll
+ModLoad: 76770000 76802000   C:\WINDOWS\SysWOW64\OLEAUT32.dll
+Breakpoint 0 hit
+eax=014ff9f4 ebx=00000100 ecx=00000000 edx=00000100 esi=018c3af8 edi=014ffaf4
+eip=00e2c554 esp=014ff918 ebp=014ff938 iopl=0         nv up ei pl nz na po cy
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000203
+Salview+0x2ec554:
+00e2c554 5e              pop     esi
+0:000> g
+Breakpoint 0 hit
+eax=014ffa74 ebx=00000080 ecx=00000000 edx=00000080 esi=018c3a78 edi=014ffaf4
+eip=00e2c554 esp=014ff994 ebp=014ff9b4 iopl=0         nv up ei pl zr na pe cy
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000247
+Salview+0x2ec554:
+00e2c554 5e              pop     esi
+0:000> g
+Breakpoint 0 hit
+eax=018ddf58 ebx=000000ff ecx=00000000 edx=000000ff esi=018c3c1e edi=018de057
+eip=00e2c554 esp=014fe5a0 ebp=014fe5c0 iopl=0         nv up ei pl nz na po cy
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000203
+Salview+0x2ec554:
+00e2c554 5e              pop     esi
+0:000> bc *
+
+0:000> bp Salview+0x2ec500
+0:000> g
+Breakpoint 0 hit
+eax=018d0da0 ebx=00000745 ecx=00000001 edx=014fe680 esi=018c5ef0 edi=018d0db0
+eip=00e2c500 esp=014fe62c ebp=014fe680 iopl=0         nv up ei ng nz na pe cy
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000287
+Salview+0x2ec500:
+00e2c500 57              push    edi
+0:000> k
+ # ChildEBP RetAddr  
+WARNING: Stack unwind information not available. Following frames may be wrong.
+00 014fe680 76f86dab Salview+0x2ec500
+01 014fe6dc 00000000 ntdll!RtlpFreeHeapInternal+0x783
+0:000> bp Salview+0x2eca1f
+0:000> g
+Breakpoint 0 hit
+eax=018d0da0 ebx=00000745 ecx=00000001 edx=014fe680 esi=018c5ef0 edi=018d0db0
+eip=00e2c500 esp=014fe62c ebp=014fe680 iopl=0         nv up ei ng nz na pe cy
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000287
+Salview+0x2ec500:
+00e2c500 57              push    edi
+0:000> g
+Breakpoint 1 hit
+eax=00000045 ebx=00000745 ecx=00000001 edx=00000001 esi=018d0da0 edi=014fe680
+eip=00e2ca1f esp=014fe624 ebp=014fe680 iopl=0         nv up ei pl nz na po nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+Salview+0x2eca1f:
+00e2ca1f 8807            mov     byte ptr [edi],al          ds:002b:014fe680=dc
+0:000> k
+ # ChildEBP RetAddr  
+WARNING: Stack unwind information not available. Following frames may be wrong.
+00 014fe680 76f86dab Salview+0x2eca1f
+01 014fe6dc 00000000 ntdll!RtlpFreeHeapInternal+0x783
+0:000> t
+eax=00000045 ebx=00000745 ecx=00000001 edx=00000001 esi=018d0da0 edi=014fe680
+eip=00e2ca21 esp=014fe624 ebp=014fe680 iopl=0         nv up ei pl nz na po nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+Salview+0x2eca21:
+00e2ca21 46              inc     esi
+0:000> kv
+ # ChildEBP RetAddr  Args to Child              
+WARNING: Stack unwind information not available. Following frames may be wrong.
+00 014fe680 76f86dab 00000000 76f86dd2 018c3e38 Salview+0x2eca21
+01 014fe6d8 76f5b833 0000002c 014fe844 01880000 ntdll!RtlpFreeHeapInternal+0x783 (FPO: [Non-Fpo])
+02 014fe6f4 76f3d21f b05141ca 01880000 0000006a ntdll!RtlpFindEntry+0x23 (FPO: [0,0,4])
+03 014fe844 76f3b0cf 00000015 01b53bf0 00000001 ntdll!RtlpAllocateHeap+0x175f (FPO: [Non-Fpo])
+04 014fe978 76f3ae8e 00000000 76f3ae8e 50000163 ntdll!RtlpAllocateHeapInternal+0x22f (FPO: [Non-Fpo])
+05 014fe998 6884c946 01ad0000 50000163 0000008a ntdll!RtlAllocateHeap+0x3e (FPO: [Non-Fpo])
+06 014fe9b8 688248a1 00010040 014fea8c 00000003 atcuf32!AtcQueryRegion+0x12a26
+07 014fe9d8 68824e06 68824da8 6223f29e 50000163 atcuf32+0x48a1
+08 014feab0 76f3ffdf 00000001 01b53b58 0000007f atcuf32+0x4e06
+09 014feb20 01ad0000 0001769b 0000007f 014fec10 ntdll!RtlpInsertFreeBlock+0x11f (FPO: [Non-Fpo])
+0a 00000000 00000000 00000000 00000000 00000000 0x1ad0000
+
+0:000> bp Salview+0xe18d1
+0:000> g
+Breakpoint 2 hit
+eax=014fe680 ebx=00000745 ecx=00000000 edx=00000001 esi=018c5ef0 edi=018d0db0
+eip=00c218d1 esp=014fe630 ebp=014fe680 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000246
+Salview+0xe18d1:
+00c218d1 032f            add     ebp,dword ptr [edi]  ds:002b:018d0db0=00000001
+0:000> kv
+ # ChildEBP RetAddr  Args to Child              
+WARNING: Stack unwind information not available. Following frames may be wrong.
+00 014fe680 76f86dab 00000000 76f86dd2 018c3e38 Salview+0xe18d1
+01 014fe6d8 76f5b833 0000002c 014fe844 01880000 ntdll!RtlpFreeHeapInternal+0x783 (FPO: [Non-Fpo])
+02 014fe6f4 76f3d21f b05141ca 01880000 0000006a ntdll!RtlpFindEntry+0x23 (FPO: [0,0,4])
+03 014fe844 76f3b0cf 00000015 01b53bf0 00000001 ntdll!RtlpAllocateHeap+0x175f (FPO: [Non-Fpo])
+04 014fe978 76f3ae8e 00000000 76f3ae8e 50000163 ntdll!RtlpAllocateHeapInternal+0x22f (FPO: [Non-Fpo])
+05 014fe998 6884c946 01ad0000 50000163 0000008a ntdll!RtlAllocateHeap+0x3e (FPO: [Non-Fpo])
+06 014fe9b8 688248a1 00010040 014fea8c 00000003 atcuf32!AtcQueryRegion+0x12a26
+07 014fe9d8 68824e06 68824da8 6223f29e 50000163 atcuf32+0x48a1
+08 014feab0 76f3ffdf 00000001 01b53b58 0000007f atcuf32+0x4e06
+09 014feb20 01ad0000 0001769b 0000007f 014fec10 ntdll!RtlpInsertFreeBlock+0x11f (FPO: [Non-Fpo])
+0a 00000000 00000000 00000000 00000000 00000000 0x1ad0000
+0:000> t
+eax=014fe680 ebx=00000745 ecx=00000000 edx=00000001 esi=018c5ef0 edi=018d0db0
+eip=00c218d3 esp=014fe630 ebp=014fe681 iopl=0         nv up ei pl nz na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000206
+Salview+0xe18d3:
+00c218d3 83c40c          add     esp,0Ch
+0:000> kv
+ # ChildEBP RetAddr  Args to Child              
+WARNING: Stack unwind information not available. Following frames may be wrong.
+00 014fe681 0076f86d d2000000 3876f86d 00018c3e Salview+0xe18d3
+01 014fe685 d2000000 3876f86d 00018c3e 00018800 0x76f86d
+02 014fe689 3876f86d 00018c3e 00018800 66000000 0xd2000000
+03 014fe68d 00018c3e 00018800 66000000 70006900 0x3876f86d
+04 014fe691 00018800 66000000 70006900 00000000 0x18c3e
+05 014fe695 66000000 70006900 00000000 00000000 0x18800
+06 014fe699 70006900 00000000 00000000 00000000 0x66000000
+07 014fe69d 00000000 00000000 00000000 00000000 0x70006900
+0:000> .frame /c 0
+00 014fe681 0076f86d Salview+0xe18d3
+eax=014fe680 ebx=00000745 ecx=00000000 edx=00000001 esi=018c5ef0 edi=018d0db0
+eip=00c218d3 esp=014fe630 ebp=014fe681 iopl=0         nv up ei pl nz na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000206
+Salview+0xe18d3:
+00c218d3 83c40c          add     esp,0Ch
+0:000> .frame /c 1
+01 014fe685 d2000000 0x76f86d
+eax=014fe680 ebx=00000745 ecx=00000000 edx=00000001 esi=018c5ef0 edi=018d0db0
+eip=0076f86d esp=014fe689 ebp=ab014fe6 iopl=0         nv up ei pl nz na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000206
+0076f86d ??              ???
+0:000> .frame /c 2
+02 014fe689 3876f86d 0xd2000000
+eax=014fe680 ebx=00000745 ecx=00000000 edx=00000001 esi=018c5ef0 edi=018d0db0
+eip=d2000000 esp=014fe68d ebp=ab014fe6 iopl=0         nv up ei pl nz na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000206
+d2000000 ??              ???
+0:000> .frame /c 3
+03 014fe68d 00018c3e 0x3876f86d
+eax=014fe680 ebx=00000745 ecx=00000000 edx=00000001 esi=018c5ef0 edi=018d0db0
+eip=3876f86d esp=014fe691 ebp=ab014fe6 iopl=0         nv up ei pl nz na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000206
+3876f86d ??              ???
+0:000> .frame /c 4
+04 014fe691 00018800 0x18c3e
+eax=014fe680 ebx=00000745 ecx=00000000 edx=00000001 esi=018c5ef0 edi=018d0db0
+eip=00018c3e esp=014fe695 ebp=ab014fe6 iopl=0         nv up ei pl nz na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000206
+00018c3e 0000            add     byte ptr [eax],al          ds:002b:014fe680=45
+0:000> .frame /c 5
+05 014fe695 66000000 0x18800
+eax=014fe680 ebx=00000745 ecx=00000000 edx=00000001 esi=018c5ef0 edi=018d0db0
+eip=00018800 esp=014fe699 ebp=00018c3e iopl=0         nv up ei pl nz na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000206
+00018800 0000            add     byte ptr [eax],al          ds:002b:014fe680=45
+0:000> .frame /c 6
+06 014fe699 70006900 0x66000000
+eax=014fe680 ebx=00000745 ecx=00000000 edx=00000001 esi=018c5ef0 edi=018d0db0
+eip=66000000 esp=014fe69d ebp=00018800 iopl=0         nv up ei pl nz na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000206
+66000000 ??              ???
+0:000> .frame /c 7
+07 014fe69d 00000000 0x70006900
+eax=014fe680 ebx=00000745 ecx=00000000 edx=00000001 esi=018c5ef0 edi=018d0db0
+eip=70006900 esp=014fe6a1 ebp=00018800 iopl=0         nv up ei pl nz na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000206
+70006900 ??              ???
+0:000> .cxr
+Resetting default scope
+
+0:000> bp Salview+0xe18cc
+0:000> g
+Breakpoint 3 hit
+eax=44004241 ebx=00001002 ecx=ff464646 edx=014fe680 esi=018c5ef0 edi=018ddf68
+eip=00c218cc esp=014fe630 ebp=014fe681 iopl=0         nv up ei pl nz na po nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+Salview+0xe18cc:
+00c218cc e82fac2000      call    Salview+0x2ec500 (00e2c500)
+0:000> g
+Breakpoint 0 hit
+eax=44004241 ebx=00001002 ecx=ff464646 edx=014fe680 esi=018c5ef0 edi=018ddf68
+eip=00e2c500 esp=014fe62c ebp=014fe681 iopl=0         nv up ei pl nz na po nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
+Salview+0x2ec500:
+00e2c500 57              push    edi
+0:000> g
+(2d3c.2c10): Access violation - code c0000005 (first chance)
+First chance exceptions are reported before any exception handling.
+This exception may be expected and handled.
+eax=43468887 ebx=00001002 ecx=ff464646 edx=ff464646 esi=44004241 edi=014fe681
+eip=00e2c54e esp=014fe624 ebp=014fe681 iopl=0         nv up ei ng nz na pe cy
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00010287
+Salview+0x2ec54e:
+00e2c54e f3a4            rep movs byte ptr es:[edi],byte ptr [esi]
+0:000> kv
+ # ChildEBP RetAddr  Args to Child              
+WARNING: Stack unwind information not available. Following frames may be wrong.
+00 014fe681 0076f86d d2000000 3876f86d 00018c3e Salview+0x2ec54e
+01 014fe685 d2000000 3876f86d 00018c3e 00018800 0x76f86d
+02 014fe689 3876f86d 00018c3e 00018800 66000000 0xd2000000
+03 014fe68d 00018c3e 00018800 66000000 70006900 0x3876f86d
+04 014fe691 00018800 66000000 70006900 00000000 0x18c3e
+05 014fe695 66000000 70006900 00000000 00000000 0x18800
+06 014fe699 70006900 00000000 00000000 00000000 0x66000000
+07 014fe69d 00000000 00000000 00000000 00000000 0x70006900
+0:000> .logclose
+Closing open log file D:\log\IMR.log
